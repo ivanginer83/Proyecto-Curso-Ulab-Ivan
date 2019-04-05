@@ -1,0 +1,76 @@
+<!-- Se pueden añadir etiquetas, clases o ids como apoyo si fuera necesario. -->
+<!-- Mobile breakpoint: 768px -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Holy Grail</title>
+    <style>
+      main {
+        background-color: lightseagreen;
+        flex-grow: 4;
+        flex-shrink: 1;
+        flex-basis: 
+      }
+      header {
+        background-color: lightcoral;
+        flex-grow: 
+        
+      }
+      nav {
+        background-color: lightgreen;
+        flex-grow: 1;
+      }
+      aside {
+        background-color: lightyellow;
+        align-content: flex-end;
+      }
+      footer {
+        background-color: lightpink;
+        flex-shrink: 0;
+      }
+
+      #contenedor1 {
+          display:flex;
+          flex-direction: column;
+           
+      }
+      #contenedor2 {
+            display: flex;
+            flex-direction: row;
+            height: 700px;
+            flex-grow: 1;
+            
+      }
+     
+      
+      
+
+      #contenedor3 {
+          display:flex;
+          flex-direction: column;
+      }
+     @media view and (min-width: 500px) {
+aside {
+flex-direction: column;
+}
+}
+
+    </style>
+  </head>
+  <body >
+    <div id="contenedor1">
+        <header class="item">Header</header>
+    </div>
+    <div id="contenedor2">
+        <nav class="item" >Nav</nav>
+        <main class="item" >Main</main>
+        <aside class="item" >Aside</aside>
+    </div>
+    <div id="contenedor3">
+        <footer class="item">Footer</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!-- Se pueden añadir etiquetas, clases o ids como apoyo si fuera necesario. -->
+<!-- Mobile breakpoint: 768px -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Holy Grail</title>
+    <style>
+      body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      main {
+        background-color: lightseagreen;
+        flex: 1 0 auto;
+      }
+      header {
+        background-color: lightcoral;
+        height: 60px;
+      }
+      nav {
+        background-color: lightgreen;
+      }
+      aside {
+        background-color: lightyellow;
+      }
+      footer {
+        background-color: lightpink;
+        height: 60px;
+      }
+      .cont {
+        display: flex;
+        flex: 1 0 auto;
+      }
+
+      .item1{
+        flex: 0 1 auto;
+        min-width: 200px;
+      }
+      .item3{
+        flex: 0 1 auto;
+        min-width: 200px;
+      }
+
+      @media (max-width: 768px) {
+        .cont{
+          flex-direction: column;
+        }
+        .item {
+          min-width: 150vh;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div class="cont">
+    <nav class="item item1">Nav</nav>
+    <main class="item item2">Main</main>
+    <aside class="item item3">Aside</aside></div>
+    <footer>Footer</footer>
+  </body>
+</html>

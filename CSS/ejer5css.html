@@ -4,50 +4,51 @@
     <meta charset="UTF-8" />
     <title>Css</title>
     <style>
-        #primer {
-            background: gray;
-            
-        }
-        #segundo{
-            
+      .post {
+        padding: 20px;
+      }
+
+      .post:nth-of-type(odd){
+        background-color: aliceblue;
         
-        }
-        #tercero {
-            background: gray;
-        }
+      }
+
+      a {
+        color: black;
+        padding: 6px;
+      }
+
+      a:hover {
+        color:white;
+        background-color: gray;
+        border-radius: 4px;
+      }
+
+      .post:target{
+        background-color: antiquewhite;
+        outline: red solid 2px;
+      }
+
+      p::first-line{
+        font-weight: bold;
+      }
+
+      p::first-letter{
+        font-size: 50px;
+      }
         
-        
-        #uno:hover {
-            background-color: gray;
-            color: white;
-        }
-        #dos:hover {
-            background-color: gray;
-            color: white;
-        }
-        #tres:hover {
-            background-color: gray;
-            color: white;
-        }
-        article {
-            border: black 2px solid;
-        
-        }
-        p:first-line{
-            font-weight: bold;
-        }
     </style>
   </head>
   <body>
     <nav>
-      <span id="uno"><a href="">First post</a></span>
-      <span id="dos"><a href="">Second post</a></span>
-      <span id="tres"><a href="">Third post</a></span>
+      <span id="uno"><a href="#primer">First post</a></span>
+      <span id="dos"><a href="#segundo">Second post</a></span>
+      <span id="tres"><a href="#tercero">Third post</a></span>
     </nav>
     <h1>My blog</h1>
     <h2>All about me.</h2>
     <hr />
-    <article id="primer">
+    <article id="primer" class="post">
       <h3 >Entry 1</h3>
       <p>
         Oh my swag! yes master doge! oh my swag! wow! wow, so ipsum, wow. need
@@ -56,7 +57,7 @@
       <footer>Dec 6, 2017</footer>
     </article>
     <hr />
-    <article id="segundo">
+    <article id="segundo" class="post">
       <h3 >Entry 2</h3>
       <p>
         So mattis! many consectetur, much layout. wow, much adipiscing! go amet.
@@ -71,7 +72,7 @@
       <footer>Dec 7, 2017</footer>
     </article>
     <hr />
-    <article id="tercero">
+    <article id="tercero" class="post">
       <h3 >Entry 3</h3>
       <p>
         Much doge. so text! wow. many full. very sit. plz swag. oh my doge, wow.

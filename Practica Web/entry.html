@@ -8,105 +8,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Entrada - Iván</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      main {
-        flex: 1 0 auto;
-        background-color: whitesmoke;
-        width: 450px;
-      }
-      header {
-        height: 110px;
-        background-color: whitesmoke;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        }
-
-      nav {
-        background-color: whitesmoke;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-      }
-
-      footer {
-        height: 60px;
-        background-color: whitesmoke;
-      }
-      .container {
-        flex: 1 0 auto;
-        display: flex;
-      }
-      .side {
-        flex: 0 1 auto;
-        min-width: 200px;
-      }
-      @media (max-width: 768px) {
-        .container {
-          flex-direction: column;
-        }
-        .side {
-          min-width: 100vw;
-        }
-      }
-      h1{
-          color: brown;
-
-      }
-      a {
-        color: black;
-        padding: 6px;
-      }
-
-      a:hover {
-        color:white;
-        background-color: gray;
-        border-radius: 4px;}
-
-      p {
-        color: blue;
-        text-align: justify;
-      }
-      .post {
-        padding: 20px;
-      }
-      h4{
-        font-style: italic;
-        color: blue;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-        <img src="atat.jpg" alt="">
+        <img src="atat.jpg" class="logo">
 
-        <h1>Bienvenido a La Web de Iván</h1>
+        <h1>Wellcome to the Web. Hello World!</h1>
 
-        <a title="knut" href="perfil.html"><img src="profile-180.jpg"/></a>
+        <a title="knut" class="logo" href="profile.html"><img src="profile-180.jpg"/></a>
 
 
     </header>
     <div class="container">
       <nav class="side">
-        <a href="#primer">Primer artículo</a><br>
-        <a href="#segundo">Segundo artículo</a><br>
-        <a href="#tercero">Tercer artículo</a><br>
-        <a href="#cuarto">Cuarto artículo</a>
+        <a href="#first">First article</a><br>
+        <a href="#second">Second article</a><br>
+        <a href="#third">Third article</a><br>
+        <a href="#fourth">Fourth article</a>
 
       </nav>
       <main>
-        <h1>La Web de Iván</h1>
+        <h1>Wellcome to the Web. Hello World!</h1>
         <hr />
-        <input type="submit" value="Crear POST" onclick = "location='crear.html'"/>
-    <article id="primer" class="post">
-      <h3 >Hoy nace la Web de Iván</h3>
+        <input type="submit" value="Create POST" onclick = "location='create.html'"/>
+    <article id="first" class="post">
+      <h3 >Today our web borns</h3>
       <h4>by Iván <img src="profile-180.jpg" alt="" width="40" height="40"></h4>
 
 
@@ -126,9 +53,9 @@
       <footer>Apr 8, 2019</footer>
     </article>
     <hr />
-    <article id="segundo" class="post">
-      <h3 >Nuestro segundo artículo</h3>
-      <link rel="stylesheet" href="knut.ico">
+    <article id="second" class="post">
+      <h3 >Our second article</h3>
+      
       <h4>by Iván <img src="profile-180.jpg" alt="" width="40" height="40"></h4>
       <p>
         So mattis! many consectetur, much layout. wow, much adipiscing! go amet.
@@ -143,9 +70,9 @@
       <footer>Apr 10, 2019</footer>
     </article>
     <hr />
-    <article id= "tercero" class="post">
-      <h3 >Tras un parón estamos de vuelta</h3>
-      <link rel="stylesheet" href="knut.ico">
+    <article id= "third" class="post">
+      <h3 >We strike back!</h3>
+      
       <h4>by Iván <img src="profile-180.jpg" alt="" width="40" height="40"></h4>
       <p>
         So mattis! many consectetur, much layout. wow, much adipiscing! go amet.
@@ -160,9 +87,9 @@
       <footer>Apr 17, 2019</footer>
     </article>
     <hr />
-    <article id="cuarto" class="post">
-      <h3 >Y ya estamos en nuestro 4º Post</h3>
-      <link rel="stylesheet" href="knut.ico">
+    <article id="fourth" class="post">
+      <h3 >Our last Entry</h3>
+      
       <h4>by Iván <img src="profile-180.jpg" alt="" width="40" height="40"></h4>
       <p>
           So mattis! many consectetur, much layout. wow, much adipiscing! go amet.
@@ -181,7 +108,7 @@
 
     </div>
     <footer>
-      <h1>Web realizada por Iván</h1>
+      <h1>Web developed by Iván</h1>
     </footer>
   </body>
 </html>
